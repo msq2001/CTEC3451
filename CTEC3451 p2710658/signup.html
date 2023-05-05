@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-shop - Sign Up</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .form-signup {
+            width: 100%;
+            max-width: 330px;
+            padding: 15px;
+            margin: auto;
+        }
+     
+    .custom-width {
+        width: 50%;
+        margin: auto;
+        font-size: medium;
+    }
+
+
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <form class="form-signup" action="register.php" method="post">
+                <h1 class="h3 mb-3 font-weight-normal text-center"><span style="color: green;">E</span>-SHOP</h1>
+                <label for="inputUsername" class="sr-only">Username</label>
+                <input type="text" id="inputUsername" name="username" class="form-control mb-1" placeholder="Username" required autofocus>
+                <br>
+                <label for="inputName" class="sr-only">Full Name</label>
+                
+                <input type="text" id="inputName" name="name" class="form-control mb-1" placeholder="Full Name" required>
+                <br>
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="inputEmail" name="email" class="form-control mb-1" placeholder="Email" required>
+               <br>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" name="password" class="form-control mb-1" placeholder="Password" minlength="8" required>
+                 <br>
+                 <label for="inputId" class="sr-only">ID</label>
+<input type="text" id="inputId" name="id" class="form-control mb-1" placeholder="ID" required autofocus>
+<br>
+<label for="inputAddress" class="sr-only">Address</label>
+<input type="text" id="inputAddress" name="address" class="form-control mb-1" placeholder="Address" required>
+<br>
+<label for="inputPhoneNumber" class="sr-only">Phone Number</label>
+<input type="tel" id="inputPhoneNumber" name="phone_number" class="form-control mb-1" placeholder="Phone Number" required>
+<br>
+<label for="inputGender" class="sr-only">Gender</label>
+<select id="inputGender" name="gender" class="form-control mb-1" required>
+  <option selected disabled>Select Gender</option>
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+  <option value="other">Other</option>
+</select>
+<br>
+
+                
+
+               
+                
+                <button class="btn btn-success btn-lg btn-block mt-4 custom-width" type="submit">Create Account</button>
+                <br>
+                <p class="text-center mt-3" style="color:gray;font-size: small;">or</p>
+                
+
+                <p class="text-center mt-3">Sign in with</p>
+                <div class="text-center">
+                    <img src="img/facebook.svg" alt="Facebook" width="40" height="40" style="margin-right: 15px;">
+                    <img src="img/google-plus-g .svg" alt="Gmail" width="40" height="40">
+                </div>
+                <p class="text-center mt-3">
+                    Already have an account? <a href="sigin.html" class="btn" style="border-color: green; background-color: white; color: green;">Sign In</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

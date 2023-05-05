@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-shop - Sign In</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .form-signin {
+            width: 100%;
+            max-width: 330px;
+            padding: 15px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <form class="form-signin" action="sign.php" method="post">
+              <h1 class="h3 mb-3 font-weight-normal text-center"><span style="color: green;">E</span>-SHOP</h1>
+              <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="inputEmail" name="email" class="form-control mb-1" placeholder="Username" required autofocus>
+                <br>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" name="password" class="form-control mb-1" placeholder="Password" required>
+                <br>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="keepMeLoggedIn" name="keepMeLoggedIn">
+                    <label class="form-check-label" for="keepMeLoggedIn">Keep me logged in</label>
+                </div>
+                <a href="change_password.php" class="float-right">Forgot password?</a>
+                <div class="row">
+                  <br>
+                  <div class="col-6 pl-0">
+                    <button class="btn btn-lg btn-success btn-block mt-4" style="font-size: medium;"type="submit">Login</button>
+                  </div>
+                  <div class="col-6 pl-0">
+                    <a href="index.php">
+                      <button class="btn btn-lg btn-outline-secondary btn-block mt-4" style="font-size: medium;" type="button">Log in as Guest</button>
+                  </a>
+                  
+                  </div>
+                </div>
+                <br>
+                <p class="text-center mt-3" style="color:gray;font-size: small;">or</p>
+                
+
+                <p class="text-center mt-3">Sign in with</p>
+                <div class="text-center">
+                    <img src="img/facebook.svg" alt="Facebook" width="40" height="40" style="margin-right: 15px;">
+                    <img src="img/google-plus-g .svg" alt="Gmail" width="40" height="40">
+                </div>
+                <div class="text-center mt-3">
+                    <span>Not have an account?</span>
+                    <a href="signup.html" class="btn" style="border-color: green; background-color: white; color: green;">Register</a>
+                  </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
